@@ -17,7 +17,7 @@ const Notification = ({className,title}) => {
                 <div className='flex items-center justify-between'>
                     <ul className='flex -m-0.5'>
                         {notificationImages.map((items, index) => {
-                          return  <li className='flex w-6 h-6 rounded-full overflow-hidden border-2 border-n-12'> 
+                          return  <li key={index} className='flex w-6 h-6 rounded-full overflow-hidden border-2 border-n-12'> 
                                 <img key={index} src={items}
                                     className='w-full'
                                     width={20}
